@@ -168,8 +168,8 @@ var stats = {
 function sanitizeKeyName(key) {
   if (keyNameSanitize) {
     return key.replace(/\s+/g, '_')
-              .replace(/\//g, '-')
-              .replace(/[^a-zA-Z_\-0-9\.]/g, '');
+              .replace(/\//g, '-');
+              //.replace(/[^a-zA-Z_\-0-9\.]/g, '');
   } else {
     return key;
   }
